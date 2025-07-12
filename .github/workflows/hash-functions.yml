@@ -5,6 +5,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - run: echo "{HASH}"
+            - run: echo "${HASH}"
               env:
                 HASH: ${{ hashFiles('.github/workflows/*.yml')}}
