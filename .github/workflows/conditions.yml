@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello"
-        if: ${{ contains(github.run_id, '1')}} # Change Status 1
+        if: ${{ contains(github.run_id, '8')}} # Change Status 1
       - run: echo "${{github.run_id}}"
